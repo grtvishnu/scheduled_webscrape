@@ -3,6 +3,7 @@ from scrape import run as scrape_runner
 app = FastAPI()
 
 
-@app.get("/box-office-mojo-scraper")
-def scraper_view():
+@app.post("/box-office-mojo-scraper")
+def boxpffice_scrape_view():
+    scrape_runner()
     return{"data": [1, 2, 3]}

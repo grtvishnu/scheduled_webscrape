@@ -49,7 +49,7 @@ def parse_and_extract(url, name='2020'):
             header_name = header_names[i]
             # row_dict_data[header_name] = col.text
             row_data.append(col.text)
-        table_data_dicts.append(row_dict_data)
+        # table_data_dicts.append(row_dict_data)
         table_data.append(row_data)
     df = pd.DataFrame(table_data, columns=header_names)
     # df = pd.DataFrame(table_data_dicts)
