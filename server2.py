@@ -1,6 +1,12 @@
 from fastapi import FastAPI
-from scrape import run as scrape_runner
+from scarpe import run as scrape_runner
+
 app = FastAPI()
+
+
+@app.get("/")
+def hellow():
+    return{"data": [5, 6, 7]}
 
 
 @app.post("/box-office-mojo-scraper")
