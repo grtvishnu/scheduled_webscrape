@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from scrape import run as scrape_runner
 app = FastAPI()
 
 
